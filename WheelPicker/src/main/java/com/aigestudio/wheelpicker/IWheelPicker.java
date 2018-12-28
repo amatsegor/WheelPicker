@@ -18,7 +18,7 @@ import java.util.List;
  *         New project structure
  * @version 1.1.0
  */
-public interface IWheelPicker {
+public interface IWheelPicker<T> {
 
     /**
      * 获取滚轮选择器可见数据项的数量
@@ -71,7 +71,7 @@ public interface IWheelPicker {
      *
      * @param listener 滚轮Item选中监听器{@link WheelPicker.OnItemSelectedListener}
      */
-    void setOnItemSelectedListener(WheelPicker.OnItemSelectedListener listener);
+    void setOnItemSelectedListener(WheelPicker.OnItemSelectedListener<T> listener);
 
     /**
      * 获取当前被选中的数据项所显示的数据在数据源中的位置
@@ -145,7 +145,7 @@ public interface IWheelPicker {
      *
      * @return 数据列表
      */
-    List getData();
+    List<T> getData();
 
     /**
      * 设置数据列表
@@ -163,7 +163,7 @@ public interface IWheelPicker {
      *
      * @param data 数据列表
      */
-    void setData(List data);
+    void setData(List<T> data);
 
     /**
      * 设置数据项是否有相同的宽度

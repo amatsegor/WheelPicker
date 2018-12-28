@@ -17,7 +17,7 @@ import java.util.List;
  * @author AigeStudio 2016-07-12
  * @version 1
  */
-public class WheelYearPicker extends WheelPicker implements IWheelYearPicker {
+public class WheelYearPicker extends WheelPicker<Integer> implements IWheelYearPicker {
     private int mYearStart = 1000, mYearEnd = 3000;
     private int mSelectedYear;
 

@@ -17,7 +17,7 @@ import java.util.List;
  * @author AigeStudio 2016-07-12
  * @version 1
  */
-public class WheelMonthPicker extends WheelPicker implements IWheelMonthPicker {
+public class WheelMonthPicker extends WheelPicker<Integer> implements IWheelMonthPicker {
     private int mSelectedMonth;
 
     public WheelMonthPicker(Context context) {
